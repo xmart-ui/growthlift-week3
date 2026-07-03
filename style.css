@@ -89,6 +89,9 @@ img {
     height: 200px;
     background: burlywood;
     border-radius: 12px;
+    padding: 13px;
+    font-size: 34px;
+    font-weight: bold;
     box-shadow: 0 4px 12px rgba(0,0,0,.15);
     transition: .3s;
 }
