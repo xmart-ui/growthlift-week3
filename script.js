@@ -1,20 +1,19 @@
-let name = "Usman";
-const site = "GrowthLift";
-let isOnline = true;
-let skills = ["HTML", "CSS", "JavaScript"];
+document.querySelector("h1").style.color = "#00C864";
 
-function greet(name) {
-    return `Hello ${name}`;
-}
+const tabs = document.querySelectorAll(".tab-btn");
+const contents = document.querySelectorAll(".tab-content");
+tabs.forEach(tab => {
 
-console.log(greet(name));
+    tab.addEventListener("click", () => {
+        tabs.forEach(btn => btn.classList.remove("active"));
+        contents.forEach(content => content.classList.remove("active"));
+        tab.classList.add("active");
+        const panel = document.getElementById(tab.dataset.tab);
+        if (panel) {
+            panel.classList.add("active");
+        }
 
-skills.forEach(skill => console.log(skill));
+    });
 
-if (isOnline) {
-    console.log("User is online");
-} else {
-    console.log("Offline");
-}
+});
 
-console.log(`Welcome to ${site}, ${name}!`);

@@ -9,16 +9,17 @@
 </head>
 <body>
     <header>
-        <h1>USMAN MUDDASIR</h1>
+        <h1 >USMAN MUDDASIR</h1>
     
         <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+        <button class="tab-btn active" data-tab="home">Home</button>
+        <button class="tab-btn" data-tab="about">About</button>
+        <button class="tab-btn" data-tab="contact">Contact</button>
         </nav>
     </header>
     <main>
-        <section>
+        <div id="home" class="tab-content active">
+            <section>
             <h2>About Me</h2>
             <h1 class="dot">
               Frontend Developer
@@ -44,11 +45,14 @@
                 <p>Optimizing websites for faster loading speeds and smoother interactions.</p>
             </div>
         </section>
-                <section>
+
+            <section class="imgg">
             <h2>Profile Image</h2>
             <img src="img.avif" alt="Profile photo of Usman Muddasir">
         </section>
-        <section class="display-grid">
+
+        
+          <section class="display-grid">
             <div class="items">
                 <h2>HTML5</h2>
                 <p>I build clean, semantic, and well-structured web pages using modern HTML.</p>
@@ -74,7 +78,36 @@
                 <p>I build websites that adapt smoothly to desktop, tablet, and mobile devices.</p>
             </div>
         </section>
+       
+      
+        </div>
+
+        <div id="about" class="tab-content">
+            <section>
+            <h2>About Me</h2>
+            <h1 class="dot">
+              Frontend Developer
+                <span class="dot"></span>
+            </h1>
+            <p>
+                My name is Usman Muddasir, and I am from Lahore, Pakistan.
+                I am a BS Computer Science student from Superior University.
+            </p>
+        </section>
+
+             <section class="imgg">
+            <h2>Profile Image</h2>
+            <img src="img.avif" alt="Profile photo of Usman Muddasir">
+        </section>
+        </div>
+
+        <div id="contact" class="tab-content">
+            Contact Page
+        </div>
+   
     </main>
+
+    
   
     <footer>
         <p>Usman Muddasir | GrowthLift Intern 2026</p>
