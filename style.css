@@ -342,3 +342,47 @@ footer {
   }
 }
 
+
+#quote-box {
+    width: 500px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin: auto;
+    border: 2px solid #ddd;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+#quote-text {
+    margin: 25px 0;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: royalblue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: darkblue;
+}
+
+@media (max-width: 786px){
+   #quote-box {
+    width: 277px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    border: 2px solid #ddd;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+} 
