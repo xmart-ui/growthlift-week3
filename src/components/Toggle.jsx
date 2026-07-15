@@ -4,7 +4,7 @@ function Toggle(){
  const [isVisible, setIsVisible] = useState(false);
 
    return (
-    <div>
+    <div class="toggle-container">
       <button onClick={() => setIsVisible(!isVisible)}>
         {isVisible ? "Hide" : "Show"}
       </button>

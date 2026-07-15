@@ -7,6 +7,8 @@ import Card from './components/Card'
 import Counter from './components/Counter'
 import Toggle from './components/Toggle'
 import './App.css'
+import Quotebox from './components/Quotebox'
+import SkillLists from './components/SkillLists'
 
 function App() {
   return (
@@ -32,8 +34,11 @@ function App() {
       />
     </div>
 
+   
     <Counter />
     <Toggle />
+    <Quotebox />
+    <SkillLists />
     </div>
   );
 }
