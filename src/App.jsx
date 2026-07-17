@@ -1,9 +1,10 @@
+import { useState } from 'react'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Projects from './pages/Projects'
 import Home from './pages/Home'
+import Navbar from './pages/Navbar'
 import NotFound from './pages/NotFound'
-import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
@@ -12,6 +13,7 @@ import Card from './components/Card'
 import Counter from './components/Counter'
 import Toggle from './components/Toggle'
 import './App.css'
+import './index.css'
 import Quotebox from './components/Quotebox'
 import SkillLists from './components/SkillLists'
 import { Routes, Route } from "react-router-dom";
@@ -21,6 +23,8 @@ function App() {
     <div>
 
     {/* <header>Hello GrowthLift!</header> */}
+
+    <Navbar />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />

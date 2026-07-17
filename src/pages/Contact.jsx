@@ -1,10 +1,10 @@
 function Contact() {
   return (
-    <div>
-      <h1>Contact</h1>
+    <div className="min-h-screen bg-gray-900  text-black-400 p-8">
+      <h1 className="text-4xl font-bold text-white mb-4 ">Contact</h1>
 
       <form>
-        <div>
+        <div >
           <label>Name</label>
           <br />
           <input type="text" placeholder="Enter your name" />
