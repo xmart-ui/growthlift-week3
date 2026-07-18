@@ -2,56 +2,60 @@ import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <header className="flex items-center justify-between px-8 py-4 bg-gray-900 border-b border-gray-800">
-      <h1 className="text-2xl font-bold text-green-400">
-        Usman
-      </h1>
+    <header className="bg-gray-900 border-b border-gray-800">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 py-4">
 
-      <nav className="flex gap-6">
-        <NavLink
-          to="/"
-          className={({ isActive }) =>
-            isActive
-              ? "text-green-400 border-b-2 border-green-400"
-              : "text-gray-400 hover:text-green-400 transition-colors font-medium"
-          }
-        >
-          Home
-        </NavLink>
+        <h1 className="text-2xl font-bold text-green-400 mb-4 md:mb-0">
+          Usman
+        </h1>
 
-        <NavLink
-          to="/about"
-          className={({ isActive }) =>
-            isActive
-              ? "text-green-400 border-b-2 border-green-400"
-              : "text-gray-400 hover:text-green-400 transition-colors font-medium"
-          }
-        >
-          About
-        </NavLink>
+        <nav className="flex flex-wrap justify-center gap-4 sm:gap-6">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive
+                ? "text-green-400 border-b-2 border-green-400 pb-1"
+                : "text-gray-300 hover:text-green-400 transition"
+            }
+          >
+            Home
+          </NavLink>
 
-        <NavLink
-          to="/projects"
-          className={({ isActive }) =>
-            isActive
-              ? "text-green-400 border-b-2 border-green-400"
-              : "text-gray-400 hover:text-green-400 transition-colors font-medium"
-          }
-        >
-          Projects
-        </NavLink>
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive
+                ? "text-green-400 border-b-2 border-green-400 pb-1"
+                : "text-gray-300 hover:text-green-400 transition"
+            }
+          >
+            About
+          </NavLink>
 
-        <NavLink
-          to="/contact"
-          className={({ isActive }) =>
-            isActive
-              ? "text-green-400 border-b-2 border-green-400"
-              : "text-gray-400 hover:text-green-400 transition-colors font-medium"
-          }
-        >
-          Contact
-        </NavLink>
-      </nav>
+          <NavLink
+            to="/projects"
+            className={({ isActive }) =>
+              isActive
+                ? "text-green-400 border-b-2 border-green-400 pb-1"
+                : "text-gray-300 hover:text-green-400 transition"
+            }
+          >
+            Projects
+          </NavLink>
+
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              isActive
+                ? "text-green-400 border-b-2 border-green-400 pb-1"
+                : "text-gray-300 hover:text-green-400 transition"
+            }
+          >
+            Contact
+          </NavLink>
+        </nav>
+
+      </div>
     </header>
   );
 }
